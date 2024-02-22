@@ -1,0 +1,26 @@
+:ing{
+    height: 15%;
+    width: 15%;
+    object-fit: contain;
+}
+
+.comando{
+    background-color: black;
+    color: rgb(0, 255, 0);
+}
+
+.info{
+    color:white;
+    text-align: justify;
+}
+
+.subtitulo{
+    font-weight: bold;
+    color:white;
+}
+
+.titulo{
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
