@@ -1,0 +1,89 @@
+:ing{
+    height: 15%;
+    width: 15%;
+    object-fit: contain;
+}
+
+body
+{
+    background-color: rgb(159, 114, 250);
+}
+
+.comando{
+    background-color: black;
+    color: rgb(0, 255, 0);
+}
+
+.info{
+    color:white;
+    text-align: justify;
+}
+
+.subtitulo{
+    font-size: 1rem;
+    font-weight: bold;
+    color:white;
+}
+
+.titulo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#boton_Y:hover{
+    background-color: black;
+    color: rgba(81, 182, 148, 0.808);
+    border-color:  rgba(81, 182, 148, 0.808);
+    border-width: 0.25rem;
+}
+
+#boton_Y{
+    background-color: rgba(81, 182, 148, 0.808);
+    color: black;
+    border-color: black;
+    border-width: 0.25rem;
+}
+
+#boton_N{
+    background-color: rgba(247, 54, 0, 0.808);
+    color: black;
+    border-color: black;
+    border-width: 0.25rem;
+}
+
+#boton_N:hover{
+    background-color: black;
+    color: rgba(247, 54, 0, 0.808);
+    border-color: rgba(247, 54, 0, 0.808);
+    border-width: 0.25rem;
+}
+
+#boton_Ys{
+    background-color: rgba(173, 247, 0, 0.808);
+    color: black;
+    border-color: black;
+    border-width: 0.25rem;
+}
+
+#boton_Ys:hover{
+    background-color:black;
+    color:  rgba(173, 247, 0, 0.808);
+    border-color:  rgba(173, 247, 0, 0.808);
+    border-width: 0.25rem;
+}
+
+#boton_C{
+    background-color: rgba(0, 173, 247, 0.808);
+    color: black;
+    border-color: black;
+    border-width: 0.25rem;
+}
+
+#boton_C:hover{
+    background-color: black;
+    color: rgba(0, 173, 247, 0.808);
+    border-color: rgba(0, 173, 247, 0.808);
+    border-width: 0.25rem;
+}
