@@ -1,0 +1,120 @@
+:ing{
+    height: 15%;
+    width: 15%;
+    object-fit: contain;
+}
+
+.borde_informacion {
+    border: 5px solid white;
+    box-shadow: 0 0 0 10px #0000ff;
+}
+
+#titulo_informacion{
+    color: rgb(255, 196, 0); 
+    font-size: 4rem;
+    
+}
+
+#sub_informacion_alumno{
+    font-size: 1rem;
+    color: rgb(255, 204, 38);
+    text-align: justify;
+}
+
+#informacion_alumno{
+    font-size: 1rem;
+    color:white;
+    text-align: justify;
+}
+
+#comando{
+    font-size: 1.10rem;
+    background-color: black;
+    color: rgb(0, 255, 0);
+}
+
+#info{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.10rem;
+    color:rgb(76, 75, 75);
+    text-align: justify;
+}
+
+#subtitulo{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color:rgb(67, 67, 162);
+}
+
+#subtitulo2{
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:rgb(67, 67, 162);
+}
+
+
+#titulo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+#boton_W:hover{
+    background-color: black;
+    color: rgb(247, 180, 24);
+    border-color:  rgb(247, 180, 24);
+    border-width: 0.25rem;
+}
+
+#boton_W{
+    background-color: rgb(247, 180, 24);
+    color: black;
+    border-color: black;
+    border-width: 0.25rem;
+}
+
+#boton_U:hover{
+    background-color: black;
+    color:rgba(43, 247, 24, 0.842);
+    border-color:  rgb(247, 124, 24);
+    border-width: 0.25rem;
+}
+
+#boton_U{
+    background-color: rgb(247, 124, 24);
+    color: black;
+    border-color: black;
+    border-width: 0.25rem;
+}
+
+#boton_M:hover{
+    background-color: black;
+    color: rgba(43, 247, 24, 0.842);
+    border-color: rgba(43, 247, 24, 0.842);
+    border-width: 0.25rem;
+}
+
+#boton_M{
+    background-color: rgba(43, 247, 24, 0.842);
+    color: black;
+    border-color: black;
+    border-width: 0.25rem;
+}
+
+#boton_I:hover{
+    background-color: black;
+    color: rgba(38, 210, 230, 0.806);
+    border-color: rgba(38, 210, 230, 0.806);
+    border-width: 0.25rem;
+}
+
+#boton_I{
+    background-color: rgba(38, 210, 230, 0.806);
+    color: black;
+    border-color: black;
+    border-width: 0.25rem;
+}
+
