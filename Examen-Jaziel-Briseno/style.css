@@ -78,7 +78,7 @@
 
 #boton_U:hover{
     background-color: black;
-    color:rgba(43, 247, 24, 0.842);
+    color:rgb(247, 124, 24);
     border-color:  rgb(247, 124, 24);
     border-width: 0.25rem;
 }
