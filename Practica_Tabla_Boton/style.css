@@ -1,0 +1,35 @@
+
+.t {
+    background-color: rgb(255, 245, 98); 
+    border: 0.25rem solid blue;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+\\No borrar abajo de este mensaje\\
+
+.borde_informacion {
+    border: 5px solid white;
+    box-shadow: 0 0 0 10px #0000ff;
+}
+
+#titulo_informacion{
+    color: rgb(255, 196, 0); 
+    font-size: 4rem;
+    
+}
+
+#sub_informacion_alumno{
+    font-size: 1rem;
+    color: rgb(255, 204, 38);
+    text-align: justify;
+}
+
+#informacion_alumno{
+    font-size: 1rem;
+    color:white;
+    text-align: justify;
+}
+
+
