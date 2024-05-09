@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+.sized-img {
+    width: auto; 
+    height: 200px; 
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+  }
+   
+  table, th, td{
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgba(1, 129, 134, 0.869);
+  }
+   
+  .cuadro{
+      width: 2rem;
+      height: 2rem;
+      background-color: rgb(211, 255, 167);
+  }
+.t {
+    background-color: rgb(255, 245, 98); 
+    border: 0.25rem solid blue;
+    padding: 0.5rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+\\No borrar abajo de este mensaje\\
+
+.borde_informacion {
+    border: 5px solid white;
+    box-shadow: 0 0 0 10px #0000ff;
+}
+
+#titulo_informacion{
+    color: rgb(255, 196, 0); 
+    font-size: 4rem;
+    
+}
+
+#sub_informacion_alumno{
+    font-size: 1rem;
+    color: rgb(255, 204, 38);
+    text-align: justify;
+}
+
+#informacion_alumno{
+    font-size: 1rem;
+    color:white;
+    text-align: justify;
+}
+
+#titulo{
+    font-family: 'Press Start 2P', cursive;font-family: 'Press Start 2P', cursive;
+    color: rgb(164, 8, 8); 
+    font-size: 3rem;
+    text-align: center;
+    background-color: rgba(246, 180, 82);
+    border-color: black;
+}
+
+#subtitulo{
+    font-family: 'Press Start 2P', cursive;font-family: 'Press Start 2P', cursive;
+    color:rgb(119, 119, 118); 
+    font-size: 2rem;
+    text-align: center;
+    background-color: rgb(233, 233, 233);
+}
+
+#info{
+    color: rgb(0, 0, 0); 
+    font-size: 1.5rem;
+    text-align: center;
+    background-color:rgba(246, 180, 82);
+}
+#instruccion{
+    color: rgb(42, 250, 0); 
+    font-size: 1.5rem;
+    text-align: justify;
+    background-color: rgb(0, 0, 0);
+}
+
+
