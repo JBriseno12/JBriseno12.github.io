@@ -76,12 +76,28 @@
             background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
             padding: 10px;
             border-radius: 10px;
+            position: relative; /* Para colocar el botón al lado */
         }
 
         iframe {
             border: none;
-            width: 100%; /* Ocupa todo el contenedor */
+            width: 70%; /* Ocupa una parte del contenedor */
             height: 80px; /* Reduce la altura */
+            vertical-align: middle;
+        }
+
+        /* Botón al lado del reproductor */
+        #play-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 10px;
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            cursor: pointer;
+            vertical-align: middle; /* Alineado con el reproductor */
+            margin-left: 10px;
         }
     </style>
 </head>
@@ -89,9 +105,10 @@
 
     <!-- Reproductor de SoundCloud -->
     <div id="soundcloud-container">
-        <iframe scrolling="no" allow="autoplay" 
+        <iframe id="soundcloud-player" scrolling="no" allow="autoplay" 
             src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/officialmusicland/invisible-string-acoustic&color=%23ff5500&auto_play=true">
         </iframe>
+        <button id="play-button" onclick="playMusic()">🎵 Reproducir Música</button>
     </div>
 
     <h1>¿Quieres ser mi San Valentín? ❤️</h1>
@@ -125,6 +142,12 @@
             // Mostrar el GIF
             document.getElementById("gif-container").style.display = "block";
         });
+
+        // Función para reproducir la música manualmente
+        function playMusic() {
+            const iframe = document.getElementById('soundcloud-player');
+            iframe.src += '&auto_play=true';
+        }
     </script>
 
 </body>
