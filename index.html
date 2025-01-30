@@ -8,8 +8,8 @@
         /* Estilos generales */
         body {
             background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfLLvckYv4h-5saz7wdJ3DwA8TBTAaGHQeZA&s') no-repeat center center;
-            background-size: contain; /* Ajusta la imagen sin estirarla */
-            background-color: black; /* Color de fondo para evitar espacios blancos */
+            background-size: contain; /* Mantiene la proporción original del fondo */
+            background-color: black; /* Fondo negro para evitar espacios vacíos */
             background-attachment: fixed; /* Mantiene la imagen fija */
             text-align: center;
             font-family: 'Comic Sans MS', cursive, sans-serif;
@@ -18,33 +18,28 @@
             min-height: 100vh; /* Asegura que la imagen cubra toda la pantalla */
         }
 
-        /* Animación para que el texto aparezca suavemente */
-        h1, h2 {
-            margin-top: 50px;
-            font-size: 3em;
-            text-shadow: 2px 2px 5px black;
-            opacity: 0;
-            animation: aparecer 2s ease-in-out forwards;
+        /* Contenedor del GIF y mensaje */
+        #gif-container {
+            position: fixed;
+            top: 65%; /* Ajusta hacia abajo */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+            text-align: center;
         }
 
-        h2 {
+        #gif-container h2 {
             font-size: 2em;
-            animation-delay: 1s;
+            color: #FFD700; /* Amarillo dorado */
+            text-shadow: 2px 2px 5px black; /* Mejora visibilidad */
         }
 
-        /* Animación */
-        @keyframes aparecer {
-            from {
-                opacity: 0;
-                transform: translateY(-30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        #gif {
+            width: 300px; /* Ajusta el tamaño del GIF */
+            animation: aparecer 1s ease-in-out;
         }
 
-        /* Contenedor de botones */
+        /* Botones */
         .container {
             margin-top: 50px;
         }
@@ -65,49 +60,42 @@
             color: red;
         }
 
-        /* Botón NO (se moverá) */
+        /* Botón NO */
         #no {
             background: white;
             color: red;
             position: absolute;
         }
 
-        /* Animación cuando el mouse pase por encima */
-        button:hover {
-            transform: scale(1.1);
-        }
-
-        /* GIF centrado */
-        #gif-container {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            display: none;
+        /* Reproductor de SoundCloud */
+        #soundcloud-container {
+            margin: 10px auto;
             text-align: center;
+            width: 80%; /* Ajusta el ancho */
+            max-width: 400px; /* Limita el tamaño máximo */
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+            padding: 10px;
+            border-radius: 10px;
         }
 
-        #gif {
-            width: 300px;
-            animation: aparecer 1s ease-in-out;
+        iframe {
+            border: none;
+            width: 100%; /* Ocupa todo el contenedor */
+            height: 80px; /* Reduce la altura */
         }
-
-        /* Música oculta (se reproduce automáticamente) */
-        audio {
-            display: none;
-        }
-
     </style>
 </head>
 <body>
 
-    <!-- Música de fondo -->
-    <audio autoplay loop>
-        <source src="TU_CANCION_AQUI.mp3" type="audio/mp3">
-    </audio>
+    <!-- Reproductor de SoundCloud -->
+    <div id="soundcloud-container">
+        <iframe scrolling="no" allow="autoplay" 
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/officialmusicland/invisible-string-acoustic&color=%23ff5500&auto_play=true">
+        </iframe>
+    </div>
 
     <h1>¿Quieres ser mi San Valentín? ❤️</h1>
-    <h2>Te amo con todo mi corazón, mi amorcita machampita bella 💕</h2>
+    <h2>Te amo con todo mi corazón, mi amorcita machampita bella 🦝💕</h2>
 
     <div class="container" id="buttons-container">
         <button id="yes">¡Sí! 💘</button>
